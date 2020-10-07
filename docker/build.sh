@@ -8,16 +8,9 @@ then
 	exit 1
 fi
 
-URL=https://www.domjudge.org/releases/domjudge-${VERSION}.tar.gz
 FILE=domjudge.tar.gz
 
 echo "[..] Downloading DOMJuge version ${VERSION}..."
-
-if ! curl -f -s -o ${FILE} ${URL}
-then
-	echo "[!!] DOMjudge version ${VERSION} file not found on https://www.domjudge.org/releases"
-	exit 1
-fi
 
 echo "[ok] DOMjudge version ${VERSION} downloaded as domjudge.tar.gz"; echo
 
